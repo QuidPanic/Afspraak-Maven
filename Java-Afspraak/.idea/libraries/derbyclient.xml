@@ -1,0 +1,10 @@
+<component name="libraryTable">
+  <library name="derbyclient">
+    <CLASSES>
+      <root url="jar://D:/Desktop/NOVI/Leerlijn OOP Java/files/db-derby-10.14.2.0-lib/db-derby-10.14.2.0-lib/lib/derbyclient.jar!/" />
+      <root url="jar://D:/Desktop/NOVI/Leerlijn OOP Java/files/db-derby-10.14.2.0-lib/db-derby-10.14.2.0-lib/lib/derby.jar!/" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES />
+  </library>
+</component>

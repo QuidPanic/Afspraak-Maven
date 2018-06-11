@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import javafx.geometry.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+<AnchorPane fx:id="rootPaneKlant" prefHeight="298.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/8.0.141" xmlns:fx="http://javafx.com/fxml/1" fx:controller="me.pieterandries.afsprakensysteem.klanttoevoegen.FXMLKlantToevoegenController">
+   <children>
+      <VBox layoutX="10.0" layoutY="4.0" prefHeight="400.0" prefWidth="606.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+         <children>
+            <TextField fx:id="klantNaam" layoutX="10.0" layoutY="35.0" promptText="Klant Naam">
+               <VBox.margin>
+                  <Insets bottom="10.0" left="10.0" right="10.0" top="10.0" />
+               </VBox.margin>
+               <font>
+                  <Font size="13.0" />
+               </font>
+            </TextField>
+            <TextField fx:id="klantID" layoutX="20.0" layoutY="20.0" promptText="Klant ID">
+               <font>
+                  <Font size="13.0" />
+               </font>
+               <VBox.margin>
+                  <Insets bottom="10.0" left="10.0" right="10.0" top="10.0" />
+               </VBox.margin>
+            </TextField>
+            <TextField fx:id="klantTel" layoutX="20.0" layoutY="177.0" promptText="Klant Telefoonnummer">
+               <font>
+                  <Font size="13.0" />
+               </font>
+               <VBox.margin>
+                  <Insets bottom="10.0" left="10.0" right="10.0" top="10.0" />
+               </VBox.margin>
+            </TextField>
+            <TextField fx:id="klantMail" layoutX="10.0" layoutY="216.0" promptText="Klant E-Mail">
+               <font>
+                  <Font size="13.0" />
+               </font>
+               <VBox.margin>
+                  <Insets bottom="10.0" left="10.0" right="10.0" top="10.0" />
+               </VBox.margin>
+            </TextField>
+            <TextField fx:id="klantWoonplaats" layoutX="20.0" layoutY="118.0" promptText="Klant Woonplaats">
+               <font>
+                  <Font size="13.0" />
+               </font>
+               <VBox.margin>
+                  <Insets bottom="10.0" left="10.0" right="10.0" top="10.0" />
+               </VBox.margin>
+            </TextField>
+            <HBox prefHeight="100.0" prefWidth="200.0">
+               <children>
+                  <JFXButton fx:id="opslaanButton" onAction="#klantToevoegen" prefHeight="116.0" prefWidth="387.0" styleClass="jfxbutton" stylesheets="@../afspraaktoevoegen/afspraakToevoegen.css" text="Opslaan">
+                     <font>
+                        <Font size="13.0" />
+                     </font>
+                  </JFXButton>
+                  <JFXButton fx:id="annulerenButton" layoutX="10.0" layoutY="10.0" onAction="#annuleren" prefHeight="144.0" prefWidth="346.0" styleClass="jfxbutton" stylesheets="@../afspraaktoevoegen/afspraakToevoegen.css" text="Annuleren">
+                     <font>
+                        <Font size="13.0" />
+                     </font>
+                  </JFXButton>
+               </children>
+            </HBox>
+         </children>
+      </VBox>
+   </children>
+</AnchorPane>

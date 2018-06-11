@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+<AnchorPane fx:id="rootPaneKlant" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="248.0" prefWidth="596.0" xmlns="http://javafx.com/javafx/8.0.141" xmlns:fx="http://javafx.com/fxml/1" fx:controller="me.pieterandries.afsprakensysteem.afspraaktoevoegen.FXMLAfspraakToevoegenController">
+    <VBox layoutY="-6.0" prefHeight="362.0" prefWidth="596.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+      <TextField fx:id="klantID" layoutX="20.0" layoutY="20.0" promptText="Voer De Klant Zijn Klant ID In">
+         <font>
+            <Font size="13.0" />
+         </font>
+         <VBox.margin>
+            <Insets bottom="10.0" left="10.0" right="10.0" top="10.0" />
+         </VBox.margin>
+      </TextField>
+      <TextField fx:id="behandeling" layoutX="10.0" layoutY="35.0" promptText="Behandeling">
+         <VBox.margin>
+            <Insets bottom="10.0" left="10.0" right="10.0" top="10.0" />
+         </VBox.margin>
+         <font>
+            <Font size="13.0" />
+         </font>
+      </TextField>
+      <TextField fx:id="afspraakDatum" layoutX="20.0" layoutY="177.0" promptText="Afspraak Datum">
+         <font>
+            <Font size="13.0" />
+         </font>
+         <VBox.margin>
+            <Insets bottom="10.0" left="10.0" right="10.0" top="10.0" />
+         </VBox.margin>
+      </TextField>
+      <TextField fx:id="afspraakId" layoutX="10.0" layoutY="216.0" promptText="Afspraak ID">
+         <font>
+            <Font size="13.0" />
+         </font>
+         <VBox.margin>
+            <Insets bottom="10.0" left="10.0" right="10.0" top="10.0" />
+         </VBox.margin>
+      </TextField>
+        <HBox prefHeight="100.0" prefWidth="200.0">
+            <JFXButton fx:id="opslaanButton" onAction="#afspraakToevoegen" prefHeight="116.0" prefWidth="387.0" styleClass="jfxbutton" stylesheets="@afspraakToevoegen.css" text="Opslaan">
+                <font>
+                    <Font size="13.0" />
+                </font>
+            </JFXButton>
+            <JFXButton fx:id="annulerenButton" layoutX="10.0" layoutY="10.0" onAction="#annuleren" prefHeight="144.0" prefWidth="346.0" styleClass="jfxbutton" stylesheets="@afspraakToevoegen.css" text="Annuleren">
+                <font>
+                    <Font size="13.0" />
+                </font>
+            </JFXButton>
+        </HBox>
+    </VBox>
+</AnchorPane>

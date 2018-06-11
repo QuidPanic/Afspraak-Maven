@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+<StackPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="657.0" prefWidth="910.0" xmlns="http://javafx.com/javafx/8.0.141" xmlns:fx="http://javafx.com/fxml/1" fx:controller="me.pieterandries.afsprakensysteem.hoofdscherm.FXMLHoofdSchermController">
+   <BorderPane prefHeight="200.0" prefWidth="200.0">
+      <center>
+         <TabPane prefHeight="200.0" prefWidth="200.0" tabClosingPolicy="UNAVAILABLE" BorderPane.alignment="CENTER">
+            <Tab text="Snel Zoeken">
+               <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="538.0" prefWidth="792.0">
+                  <VBox layoutX="-14.0" prefHeight="625.0" prefWidth="1065.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+                     <HBox fx:id="afspraak_info" alignment="CENTER" prefHeight="100.0" prefWidth="200.0" style="-fx-background-color: #e7e7e7;">
+                        <TextField fx:id="afspraakIDInput" onAction="#loadAfspraakInfo" promptText="Voer Afspraak ID in">
+                           <HBox.margin>
+                              <Insets bottom="15.0" left="15.0" right="15.0" top="15.0" />
+                           </HBox.margin>
+                        </TextField>
+                        <VBox prefHeight="200.0" prefWidth="100.0">
+                           <HBox.margin>
+                              <Insets bottom="15.0" left="15.0" right="15.0" top="15.0" />
+                           </HBox.margin>
+                           <Text fx:id="behandelingTxt" strokeType="OUTSIDE" strokeWidth="0.0" text="Behandeling" textAlignment="CENTER" wrappingWidth="648.130859375" />
+                           <Text fx:id="datumTxt" strokeType="OUTSIDE" strokeWidth="0.0" text="Datum" textAlignment="CENTER" wrappingWidth="648.130859375">
+                              <VBox.margin>
+                                 <Insets bottom="10.0" top="10.0" />
+                              </VBox.margin>
+                           </Text>
+                           <Text fx:id="afspraakKlantTxt" layoutX="10.0" layoutY="49.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Klant" textAlignment="CENTER" wrappingWidth="648.130859375" />
+                        </VBox>
+                        <VBox.margin>
+                           <Insets left="20.0" right="20.0" top="20.0" />
+                        </VBox.margin>
+                     </HBox>
+                     <HBox fx:id="klant_info" alignment="CENTER" layoutX="10.0" layoutY="10.0" prefHeight="100.0" prefWidth="200.0" style="-fx-background-color: #e7e7e7;">
+                        <TextField fx:id="klantIDInput" onAction="#loadKlantInfo" promptText="Voer Klant ID In">
+                           <HBox.margin>
+                              <Insets bottom="15.0" left="15.0" right="15.0" top="15.0" />
+                           </HBox.margin>
+                        </TextField>
+                        <VBox prefHeight="200.0" prefWidth="100.0">
+                           <HBox.margin>
+                              <Insets bottom="15.0" left="15.0" right="15.0" top="15.0" />
+                           </HBox.margin>
+                           <Text fx:id="klantTxt" strokeType="OUTSIDE" strokeWidth="0.0" text="Klant Naam" textAlignment="CENTER" wrappingWidth="648.130859375" />
+                           <Text fx:id="contactTxt" strokeType="OUTSIDE" strokeWidth="0.0" text="Contact" textAlignment="CENTER" wrappingWidth="648.130859375">
+                              <VBox.margin>
+                                 <Insets bottom="10.0" top="10.0" />
+                              </VBox.margin>
+                           </Text>
+                        </VBox>
+                        <VBox.margin>
+                           <Insets left="20.0" right="20.0" top="20.0" />
+                        </VBox.margin>
+                     </HBox>
+                     <HBox alignment="CENTER" prefHeight="304.0" prefWidth="910.0" />
+                  </VBox>
+               </AnchorPane>
+            </Tab>
+         </TabPane>
+      </center>
+      <bottom>
+         <HBox prefHeight="100.0" prefWidth="200.0" BorderPane.alignment="CENTER">
+            <Button contentDisplay="TOP" mnemonicParsing="false" onAction="#loadKlantToevoegen" prefHeight="150.0" prefWidth="227.0" text="Klant Toevoegen">
+               <graphic>
+                  <ImageView fitHeight="71.0" fitWidth="91.0" pickOnBounds="true" preserveRatio="true">
+                     <Image url="@../../../../../resources/images/add-user.png" />
+                  </ImageView>
+               </graphic>
+            </Button>
+            <Button contentDisplay="TOP" mnemonicParsing="false" onAction="#loadAfspraakToevoegen" prefHeight="150.0" prefWidth="227.0" text="Afspraak Toevoegen">
+               <graphic>
+                  <ImageView fitHeight="71.0" fitWidth="91.0" pickOnBounds="true" preserveRatio="true">
+                     <Image url="@../../../../../resources/images/maak_een_afspraak-300x300.png" />
+                  </ImageView>
+               </graphic>
+            </Button>
+            <Button contentDisplay="TOP" mnemonicParsing="false" onAction="#loadKlantenLijst" prefHeight="150.0" prefWidth="227.0" text="Klantenlijst">
+               <graphic>
+                  <ImageView fitHeight="71.0" fitWidth="91.0" pickOnBounds="true" preserveRatio="true">
+                     <Image url="@../../../../../resources/images/img_24830.png" />
+                  </ImageView>
+               </graphic>
+            </Button>
+            <Button contentDisplay="TOP" mnemonicParsing="false" onAction="#loadAfsprakenLijst" prefHeight="150.0" prefWidth="227.0" text="Afsprakenlijst">
+               <graphic>
+                  <ImageView fitHeight="71.0" fitWidth="91.0" pickOnBounds="true" preserveRatio="true">
+                     <Image url="@../../../../../resources/images/icon3-300x300-300x300.png" />
+                  </ImageView>
+               </graphic>
+            </Button>
+         </HBox>
+      </bottom>
+   </BorderPane>
+</StackPane>

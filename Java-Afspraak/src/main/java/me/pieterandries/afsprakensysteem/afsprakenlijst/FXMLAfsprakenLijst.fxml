@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.HBox?>
+<AnchorPane fx:id="rootPane" prefHeight="395.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/8.0.141" xmlns:fx="http://javafx.com/fxml/1" fx:controller="me.pieterandries.afsprakensysteem.afsprakenlijst.FXMLAfsprakenLijstController">
+   <children>
+      <TableView fx:id="tableView" prefHeight="400.0" prefWidth="600.0">
+        <columns>
+            <TableColumn fx:id="behandelingColumn" prefWidth="75.0" text="Behandeling" />
+            <TableColumn fx:id="afspraakDatumColumn" prefWidth="75.0" text="Afspraak Datum" />
+            <TableColumn fx:id="afspraakIdColumn" prefWidth="75.0" text="Afspraak ID" />
+            <TableColumn fx:id="klantColumn" prefWidth="75.0" text="Klant" />
+        </columns>
+         <columnResizePolicy>
+            <TableView fx:constant="CONSTRAINED_RESIZE_POLICY" />
+         </columnResizePolicy>
+      </TableView>
+      <HBox layoutX="200.0" layoutY="400.0" prefHeight="100.0" prefWidth="200.0">
+         <children>
+            <JFXButton fx:id="verwijderButton" onAction="#verwijderSelectie" prefHeight="104.0" prefWidth="207.0" text="Verwijderen" />
+         </children>
+      </HBox>
+   </children>
+</AnchorPane>
